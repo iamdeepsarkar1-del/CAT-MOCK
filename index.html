@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MockTestSite</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>MockTestSite</h1>
+      <p class="muted">CAT-style mock tests — curate your own tests via the in-site editor (use ?admin=1)</p>
+    </header>
+
+    <main id="app">
+      <section id="lobby" class="card">
+        <h2>Available Tests</h2>
+        <div id="tests-list"></div>
+      </section>
+
+      <section id="test-screen" class="card hidden">
+        <div class="test-header">
+          <h2 id="test-title"></h2>
+          <div class="meta">
+            <span id="timer">00:00</span>
+            <button id="quit-btn" class="small">Quit</button>
+          </div>
+        </div>
+        <div id="question-area"></div>
+        <div class="controls">
+          <button id="prev-btn" class="small">Prev</button>
+          <button id="next-btn" class="small">Next</button>
+          <button id="submit-btn" class="primary">Submit Test</button>
+        </div>
+      </section>
+
+      <section id="result-screen" class="card hidden">
+        <h2>Results</h2>
+        <div id="result-summary"></div>
+        <button id="back-home" class="primary">Back to Tests</button>
+      </section>
+    </main>
+
+    <footer>
+      <small>Built for quick deployment. Curate tests with <code>?admin=1</code>.</small>
+      <button id="admin-open" class="small hidden">Curate Mocks</button>
+    </footer>
+  </div>
+
+  <!-- Admin modal -->
+  <div id="admin-modal" class="modal hidden">
+    <div class="modal-content">
+      <h3>Curate Mocks</h3>
+      <div class="admin-controls">
+        <button id="add-test" class="small">Add Test</button>
+        <button id="export-json" class="small">Export JSON</button>
+        <button id="reset-json" class="small">Reset to sample</button>
+      </div>
+      <div id="admin-list"></div>
+      <div class="modal-actions">
+        <button id="close-admin" class="small">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
