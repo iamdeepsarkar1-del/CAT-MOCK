@@ -1,0 +1,42 @@
+{
+  "tests": [
+    {
+      "id": "cat-sample-1",
+      "title": "CAT Verbal Sectional",
+      "duration_minutes": 20,
+      "questions": [
+        {
+          "id": "q1",
+          "text": "Choose the most appropriate synonym for 'obstinate'.",
+          "options": ["Flexible", "Stubborn", "Friendly", "Timid"],
+          "answer": 1
+        },
+        {
+          "id": "q2",
+          "text": "If 3x + 5 = 20, what is x?",
+          "options": ["3", "5", "8", "-5"],
+          "answer": 0
+        }
+      ]
+    },
+    {
+      "id": "cat-sample-2",
+      "title": "CAT Quant Sectional",
+      "duration_minutes": 25,
+      "questions": [
+        {
+          "id": "q1",
+          "text": "Which number is prime?",
+          "options": ["21", "31", "35", "39"],
+          "answer": 1
+        },
+        {
+          "id": "q2",
+          "text": "If a + b = 10 and a - b = 2, find a × b.",
+          "options": ["24", "21", "16", "18"],
+          "answer": 0
+        }
+      ]
+    }
+  ]
+}
